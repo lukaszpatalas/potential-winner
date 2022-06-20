@@ -17,6 +17,11 @@ nav {
 
 .header-main {
     display: flex;
+    justify-content: center;
+}
+
+.header-left, .header-right {
+    width: 40vw;
 }
 
 h1 {
