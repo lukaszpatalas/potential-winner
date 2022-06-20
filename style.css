@@ -1,3 +1,16 @@
 body {
     font-family: 'Roboto', 'Helvetica', sans-serif;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+}
+
+.header-main {
+    display: flex;
+}
