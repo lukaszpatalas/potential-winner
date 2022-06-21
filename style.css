@@ -19,17 +19,30 @@ nav {
 .header-main {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex: auto;
+    gap: 25px;
 }
 
 .header-left, .header-right {
     width: 375px;
+    height: 220px;
 }
 
 .header-left {
     display: flex;
     flex-direction: column;
+}
+
+.header-right {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: #A9A9A9;
+}
+
+.header-right > p {
+    color: #F9FAF8;
 }
 
 h1, ul {
@@ -57,8 +70,8 @@ h1 {
     padding: 6px 30px;
     border: 1px solid #3882F6;
     border-radius: 5px;
-    margin-top: 10px;
     width: 125px;
+    margin-top: 15px;
 }
 
 h2 {
