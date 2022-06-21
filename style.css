@@ -143,8 +143,13 @@ h3 {
 .section-two {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: #1F2937;
+    width: 100vw;
+    border: 2px solid red;
+}
+
+.section-two-width {
     width: 750px;
-    border: 1px solid black;
+    border: 2px solid white;
+    align-self: center;
 }
