@@ -1,6 +1,9 @@
 body {
     font-family: 'Roboto', 'Helvetica', sans-serif;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -8,6 +11,7 @@ header {
     flex-direction: column;
     background-color: #1F2937;
     height: 35vh;
+    width: 100vw;
 }
 
 nav {
@@ -118,8 +122,8 @@ h3 {
 
 .cards {
     display: flex;
-    width: 750px;
     justify-content: center;
+    width: 750px;
 }
 
 .card {
@@ -134,4 +138,13 @@ h3 {
     margin: 0;
     padding: 10px;
     text-align: center;
+}
+
+.section-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    border: 1px solid black;
 }
