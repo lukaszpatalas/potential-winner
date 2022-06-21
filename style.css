@@ -7,6 +7,7 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
+    height: 35vh;
 }
 
 nav {
@@ -18,14 +19,21 @@ nav {
 .header-main {
     display: flex;
     justify-content: center;
+    flex: auto;
 }
 
 .header-left, .header-right {
-    width: 40vw;
+    width: 375px;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 h1, ul {
-    width: 40vw;
+    width: 375px;
 }
 
 h1 {
@@ -38,6 +46,7 @@ h1 {
 .header-left > p {
     color: #E5E7EB;
     font-size: 16px;
+    margin: 0;
 }
 
 .header-button {
@@ -48,12 +57,15 @@ h1 {
     padding: 6px 30px;
     border: 1px solid #3882F6;
     border-radius: 5px;
+    margin-top: 10px;
+    width: 125px;
 }
 
 h2 {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: 900;
+    margin: 0;
 }
 
 ul {
