@@ -67,7 +67,7 @@ h1 {
 }
 
 .header-button {
-    color: #E5E7EB;
+    color: #ffffff;
     background-color: #3882F6;
     font-size: 16px; 
     font-weight: 900;
@@ -212,9 +212,11 @@ h4 {
 }
 
 .section-right-button {
-    width: 85px;
-    height: 25px;
+    width: 125px;
+    font-size: 16px;
+    font-weight: 900;
     border: 1.5px solid #ffffff;
+    padding: 6px 30px;
     border-radius: 5px;
     background-color: #3882F6;
     color: #ffffff;
