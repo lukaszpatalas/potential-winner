@@ -10,7 +10,7 @@ header {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
-    height: 35vh;
+    height: 375px;
     width: 100vw;
 }
 
@@ -102,9 +102,9 @@ a {
 
 .section-one {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 350px;
 }
 
 h3 {
@@ -145,7 +145,7 @@ h3 {
     flex-direction: column;
     background-color: #E5E7EB;
     width: 100vw;
-    height: 300px;
+    height: 350px;
     justify-content: center;
     align-items: center
 }
@@ -157,7 +157,7 @@ h3 {
 }
 
 .section-two-width > p:nth-of-type(1) {
-    margin-top: 85px;
+    margin-top: 60px;
     margin-bottom: 10px;
     font-size: 26px;
     text-align: left;
@@ -172,4 +172,12 @@ h3 {
     margin-top: 0;
     font-size: 22px;
     font-weight: 500;
+}
+
+.section-three {
+
+}
+
+.bluebox {
+
 }
