@@ -175,7 +175,10 @@ h3 {
 }
 
 .section-three {
-
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bluebox {
