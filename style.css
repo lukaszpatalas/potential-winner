@@ -185,7 +185,31 @@ h3 {
     display: flex;
     background-color: #3882F6;
     color: #E5E7EB;
-    padding: 20px 100px;
+    padding: 25px 100px;
     justify-content: center;
     align-items: center;
+    border-radius: 6px;
+    height: 75px;
+    width: 600px;
 }
+
+h4 {
+    margin-bottom: 0;
+}
+
+.bluebox > .section-left > p {
+    margin-top: 5px;
+}
+
+.section-left {
+    width: 500px;
+}
+
+.section-right {
+    display: flex;
+    justify-content: flex-end;
+    width: 200px;
+}
+
+
+
