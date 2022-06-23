@@ -143,13 +143,33 @@ h3 {
 .section-two {
     display: flex;
     flex-direction: column;
-    background-color: #1F2937;
+    background-color: #E5E7EB;
     width: 100vw;
-    border: 2px solid red;
+    height: 300px;
+    justify-content: center;
+    align-items: center
 }
 
 .section-two-width {
-    width: 750px;
-    border: 2px solid white;
-    align-self: center;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-two-width > p:nth-of-type(1) {
+    margin-top: 85px;
+    margin-bottom: 10px;
+    font-size: 26px;
+    text-align: left;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.3;
+}
+
+.section-two-width > p:nth-of-type(2) {
+    align-self: flex-end;
+    margin-right: 30px; 
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: 500;
 }
