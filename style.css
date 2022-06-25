@@ -223,3 +223,14 @@ h4 {
     background-color: #3882F6;
     color: #ffffff;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #ffffff;
+    background-color: #1F2937;
+    font-size: 16px;
+    height: 60px;
+}
