@@ -1,4 +1,14 @@
 /* General CSS rules */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Roboto', 'Helvetica', sans-serif;
     margin: 0;
