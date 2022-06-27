@@ -114,6 +114,16 @@ h2 {
     margin-top: 15px;
 }
 
+.testing-Button {
+    padding: 6px 10px;
+}
+
+.testing-Button:hover {
+    color: #3882F6;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
 .header-right {
     display: flex;
     justify-content: center;
