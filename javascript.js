@@ -10,3 +10,4 @@ function updateText() {
         testButton.textContent = "Click me";
     }
 }
+
