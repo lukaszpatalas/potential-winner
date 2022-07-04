@@ -44,7 +44,6 @@ nav {
 h1 {
     margin: 0;
     padding: 0;
-    color: #ffffff;
     font-size: 24px;
 }
 
@@ -63,7 +62,6 @@ ul {
 }
 
 .header-menu>li>a {
-    color: #FFFFFF;
     text-decoration: none;
     font-size: 16px;
 }
@@ -89,21 +87,18 @@ ul {
 }
 
 h2 {
-    color: #ffffff;
     font-size: 48px;
     font-weight: 900;
     margin: 0;
 }
 
 .header-left>p {
-    color: #ffffff;
     font-size: 16px;
     margin: 0;
     line-height: 1.5;
 }
 
 .header-button {
-    color: #ffffff;
     background-color: #3882F6;
     font-size: 16px;
     font-weight: 900;
@@ -129,10 +124,6 @@ h2 {
     justify-content: center;
     align-items: center;
     background-color: #A9A9A9;
-}
-
-.header-right>p {
-    color: #ffffff;
 }
 
 /* Section-one CSS rules */
@@ -229,7 +220,6 @@ h3 {
 .blue-box {
     display: flex;
     background-color: #3882F6;
-    color: #ffffff;
     padding: 50px 100px;
     justify-content: center;
     align-items: center;
@@ -267,7 +257,6 @@ h4 {
     padding: 6px 30px;
     border-radius: 5px;
     background-color: #3882F6;
-    color: #ffffff;
 }
 
 /* Footer CSS rules */
@@ -277,8 +266,18 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: #ffffff;
     background-color: #1F2937;
     font-size: 16px;
     height: 60px;
 }
+
+/* Enable easier switching between different pallets of colours */
+
+/* Primary font colours */
+
+h1, .header-menu>li>a, h2, .header-left>p, .header-button, .header-right>p, .blue-box, .section-three-button, footer {
+    color: #ffffff;
+}
+
+/* Secondary font colours */
+
