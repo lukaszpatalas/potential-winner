@@ -28,12 +28,45 @@
 </body>
 <script>
 
-    function repsCalculator(max, week) {
+    function repsCalculator(max, cycle) {
         const fiveRep = max * 0.87;
         const result = "";
-        switch (week) {
+        switch (cycle) {
             case 1:
+                console.log(`Warm up Set 1: ${Math.round((fiveRep * 0.4) / 2.5) * 2.5} kg * 5`);
+                console.log(`Warm up Set 2: ${Math.round((fiveRep * 0.5) / 2.5) * 2.5} kg * 5`);
+                console.log(`Warm up Set 3: ${Math.round((fiveRep * 0.6) / 2.5) * 2.5} kg * 3`);
+                console.log(`Heavy Set 1: ${Math.round((max * 0.7) / 2.5) * 2.5} kg * 5`);
+                console.log(`Heavy Set 2: ${Math.round((max * 0.8) / 2.5) * 2.5} kg * 5`);
+                console.log(`Heavy Set 3: ${Math.round((max * 0.9) / 2.5) * 2.5} kg * 5`);
+                console.log(`BBB Set 1-5: ${Math.round((max * 0.6) / 2.5) * 2.5} kg * 10`);
+                break;
+            case 2:
+                console.log(`Warm up Set 1: ${Math.round((fiveRep * 0.4) / 2.5) * 2.5} kg * 5`);
+                console.log(`Warm up Set 2: ${Math.round((fiveRep * 0.5) / 2.5) * 2.5} kg * 5`);
+                console.log(`Warm up Set 3: ${Math.round((fiveRep * 0.6) / 2.5) * 2.5} kg * 3`);
+                console.log(`Heavy Set 1: ${Math.round((max * 0.65) / 2.5) * 2.5} kg.`)
+                console.log(`Heavy Set 2: ${Math.round((max * 0.75) / 2.5) * 2.5} kg.`);
+                console.log(`Heavy Set 3: ${Math.round((max * 0.85) / 2.5) * 2.5} kg.`);
+                console.log(`BBB Set 1-5: ${Math.round((max * 0.5) / 2.5) * 2.5} kg.`);
+                break;
+            case 3:
                 console.log(`Warm up Set 1: ${Math.round((fiveRep * 0.4) / 2.5) * 2.5} kg.`);
+                console.log(`Warm up Set 2: ${Math.round((fiveRep * 0.5) / 2.5) * 2.5} kg.`);
+                console.log(`Warm up Set 3: ${Math.round((fiveRep * 0.6) / 2.5) * 2.5} kg.`);
+                console.log(`Heavy Set 1: ${Math.round((max * 0.75) / 2.5) * 2.5} kg.`);
+                console.log(`Heavy Set 2: ${Math.round((max * 0.85) / 2.5) * 2.5} kg.`);
+                console.log(`Heavy Set 3: ${Math.round((max * 0.95) / 2.5) * 2.5} kg.`);
+                console.log(`BBB Set 1-5: ${Math.round((max * 0.7) / 2.5) * 2.5} kg.`);
+                break;
+            case 4:
+                console.log(`Warm up Set 1: ${Math.round((fiveRep * 0.4) / 2.5) * 2.5} kg.`);
+                console.log(`Warm up Set 2: ${Math.round((fiveRep * 0.5) / 2.5) * 2.5} kg.`);
+                console.log(`Warm up Set 3: ${Math.round((fiveRep * 0.6) / 2.5) * 2.5} kg.`);
+                console.log(`Heavy Set 1: ${Math.round((max * 0.7) / 2.5) * 2.5} kg.`);
+                console.log(`Heavy Set 2: ${Math.round((max * 0.8) / 2.5) * 2.5} kg.`);
+                console.log(`Heavy Set 3: ${Math.round((max * 0.9) / 2.5) * 2.5} kg.`);
+                console.log(`PR Set: ${Math.round(max / 2.5) * 2.5} kg.`);
                 break;
         }
     }
