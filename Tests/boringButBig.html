@@ -30,28 +30,9 @@
     function repsCalculator(max, cycle, bigPerc) {
         const fiveRep = max * 0.87;
         const result = "";
-        switch (cycle) {
-            case 1:
-                warmUpSets(fiveRep);
-                heavySets(max, cycle);
-                lastSets(max, cycle, bigPerc);
-                break;
-            case 2:
-                warmUpSets(fiveRep);
-                heavySets(max, cycle);
-                lastSets(max, cycle, bigPerc);
-                break;
-            case 3:
-                warmUpSets(fiveRep);
-                heavySets(max, cycle);
-                lastSets(max, cycle, bigPerc);
-                break;
-            case 4:
-                warmUpSets(fiveRep);
-                heavySets(max, cycle);
-                lastSets(max, cycle, bigPerc);
-                break;
-        }
+        warmUpSets(fiveRep);
+        heavySets(max, cycle);
+        lastSets(max, cycle, bigPerc);
     }
 
     function warmUpSets(fiveRepMax) {
