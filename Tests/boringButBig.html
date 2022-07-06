@@ -33,30 +33,22 @@
         switch (cycle) {
             case 1:
                 warmUpSets(fiveRep);
-                console.log(`Heavy Set 1: ${Math.round((max * 0.7) / 2.5) * 2.5} kg * 5`);
-                console.log(`Heavy Set 2: ${Math.round((max * 0.8) / 2.5) * 2.5} kg * 5`);
-                console.log(`Heavy Set 3: ${Math.round((max * 0.9) / 2.5) * 2.5} kg * 5`);
+                heavySets(max, cycle);
                 console.log(`BBB Set 1-5: ${Math.round((max * 0.6) / 2.5) * 2.5} kg * 10`);
                 break;
             case 2:
                 warmUpSets(fiveRep);
-                console.log(`Heavy Set 1: ${Math.round((max * 0.65) / 2.5) * 2.5} kg * 5`)
-                console.log(`Heavy Set 2: ${Math.round((max * 0.75) / 2.5) * 2.5} kg * 5`);
-                console.log(`Heavy Set 3: ${Math.round((max * 0.85) / 2.5) * 2.5} kg * 5`);
+                heavySets(max, cycle);
                 console.log(`BBB Set 1-5: ${Math.round((max * 0.5) / 2.5) * 2.5} kg * 10`);
                 break;
             case 3:
                 warmUpSets(fiveRep);
-                console.log(`Heavy Set 1: ${Math.round((max * 0.75) / 2.5) * 2.5} kg * 5`);
-                console.log(`Heavy Set 2: ${Math.round((max * 0.85) / 2.5) * 2.5} kg * 5`);
-                console.log(`Heavy Set 3: ${Math.round((max * 0.95) / 2.5) * 2.5} kg * 5`);
+                heavySets(max, cycle);
                 console.log(`BBB Set 1-5: ${Math.round((max * 0.7) / 2.5) * 2.5} kg * 10`);
                 break;
             case 4:
                 warmUpSets(fiveRep);
-                console.log(`Heavy Set 1: ${Math.round((max * 0.7) / 2.5) * 2.5} kg * 5`);
-                console.log(`Heavy Set 2: ${Math.round((max * 0.8) / 2.5) * 2.5} kg * 5`);
-                console.log(`Heavy Set 3: ${Math.round((max * 0.9) / 2.5) * 2.5} kg * 5`);
+                heavySets(max, cycle);
                 console.log(`PR Set: ${Math.round(max / 2.5) * 2.5} kg * 3-5`);
                 break;
         }
@@ -67,6 +59,25 @@
         console.log(`Warm up Set 2: ${Math.round((fiveRepMax * 0.5) / 2.5) * 2.5} kg * 5`);
         console.log(`Warm up Set 3: ${Math.round((fiveRepMax * 0.6) / 2.5) * 2.5} kg * 5`);
     }
+
+    function heavySets(maxRep, cycleNo) {
+        if (cycleNo === 1 || cycleNo === 4) {
+            console.log(`Heavy Set 1: ${Math.round((maxRep * 0.7) / 2.5) * 2.5} kg * 5`);
+            console.log(`Heavy Set 2: ${Math.round((maxRep * 0.8) / 2.5) * 2.5} kg * 5`);
+            console.log(`Heavy Set 3: ${Math.round((maxRep * 0.9) / 2.5) * 2.5} kg * 5`);
+        } else if (cycleNo === 2) {
+            console.log(`Heavy Set 1: ${Math.round((maxRep * 0.65) / 2.5) * 2.5} kg * 5`)
+            console.log(`Heavy Set 2: ${Math.round((maxRep * 0.75) / 2.5) * 2.5} kg * 5`);
+            console.log(`Heavy Set 3: ${Math.round((maxRep * 0.85) / 2.5) * 2.5} kg * 5`);
+        } else if (cycleNo === 3) {
+            console.log(`Heavy Set 1: ${Math.round((maxRep * 0.75) / 2.5) * 2.5} kg * 5`);
+            console.log(`Heavy Set 2: ${Math.round((maxRep * 0.85) / 2.5) * 2.5} kg * 5`);
+            console.log(`Heavy Set 3: ${Math.round((maxRep * 0.95) / 2.5) * 2.5} kg * 5`);
+        } else {
+            console.log("Sorry, please choose number between 1 and 4 inclusive.");
+        }
+    }
+
 </script>
 
 </html>
