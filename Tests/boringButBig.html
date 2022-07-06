@@ -28,11 +28,15 @@
 <script>
 
     function repsCalculator(max, cycle, bigPerc) {
-        const fiveRep = max * 0.87;
-        const result = "";
-        warmUpSets(fiveRep);
-        heavySets(max, cycle);
-        lastSets(max, cycle, bigPerc);
+        if (cycle >= 1 && cycle <= 4) {
+            const fiveRep = max * 0.87;
+            const result = "";
+            warmUpSets(fiveRep);
+            heavySets(max, cycle);
+            lastSets(max, cycle, bigPerc);
+        } else {
+            console.log("Sorry, please cycle number between 1 and 4 inclusive.");
+        }
     }
 
     function warmUpSets(fiveRepMax) {
@@ -54,8 +58,6 @@
             console.log(`Heavy Set 1: ${Math.round((maxRep * 0.75) / 2.5) * 2.5} kg * 5`);
             console.log(`Heavy Set 2: ${Math.round((maxRep * 0.85) / 2.5) * 2.5} kg * 5`);
             console.log(`Heavy Set 3: ${Math.round((maxRep * 0.95) / 2.5) * 2.5} kg * 5`);
-        } else {
-            console.log("Sorry, please choose number between 1 and 4 inclusive.");
         }
     }
 
@@ -80,10 +82,7 @@
             }
         } else if (cycleNo === 4) {
             console.log(`PR Set: ${Math.round(maxRep / 2.5) * 2.5} kg * 3-5`);
-        } else {
-            console.log("Sorry, please choose number between 1 and 4 inclusive.");
         }
-
     }
 
 </script>
