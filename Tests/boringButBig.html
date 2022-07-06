@@ -27,29 +27,29 @@
 </body>
 <script>
 
-    function repsCalculator(max, cycle) {
+    function repsCalculator(max, cycle, bigPerc) {
         const fiveRep = max * 0.87;
         const result = "";
         switch (cycle) {
             case 1:
                 warmUpSets(fiveRep);
                 heavySets(max, cycle);
-                console.log(`BBB Set 1-5: ${Math.round((max * 0.6) / 2.5) * 2.5} kg * 10`);
+                lastSets(max, cycle, bigPerc);
                 break;
             case 2:
                 warmUpSets(fiveRep);
                 heavySets(max, cycle);
-                console.log(`BBB Set 1-5: ${Math.round((max * 0.5) / 2.5) * 2.5} kg * 10`);
+                lastSets(max, cycle, bigPerc);
                 break;
             case 3:
                 warmUpSets(fiveRep);
                 heavySets(max, cycle);
-                console.log(`BBB Set 1-5: ${Math.round((max * 0.7) / 2.5) * 2.5} kg * 10`);
+                lastSets(max, cycle, bigPerc);
                 break;
             case 4:
                 warmUpSets(fiveRep);
                 heavySets(max, cycle);
-                console.log(`PR Set: ${Math.round(max / 2.5) * 2.5} kg * 3-5`);
+                lastSets(max, cycle, bigPerc);
                 break;
         }
     }
@@ -76,6 +76,33 @@
         } else {
             console.log("Sorry, please choose number between 1 and 4 inclusive.");
         }
+    }
+
+    function lastSets(maxRep, cycleNo, biggerPerc) {
+        if (cycleNo === 1) {
+            if (biggerPerc === true) {
+                console.log(`BBB Set 1-5: ${Math.round((maxRep * 0.6) / 2.5) * 2.5} kg * 10`);
+            } else {
+                console.log(`BBB Set 1-5: ${Math.round((maxRep * 0.5) / 2.5) * 2.5} kg * 10`);
+            }
+        } else if (cycleNo === 2) {
+            if (biggerPerc === true) {
+                console.log(`BBB Set 1-5: ${Math.round((maxRep * 0.5) / 2.5) * 2.5} kg * 10`);
+            } else {
+                console.log(`BBB Set 1-5: ${Math.round((maxRep * 0.4) / 2.5) * 2.5} kg * 10`);
+            }
+        } else if (cycleNo === 3) {
+            if (biggerPerc === true) {
+                console.log(`BBB Set 1-5: ${Math.round((maxRep * 0.7) / 2.5) * 2.5} kg * 10`);
+            } else {
+                console.log(`BBB Set 1-5: ${Math.round((maxRep * 0.6) / 2.5) * 2.5} kg * 10`);
+            }
+        } else if (cycleNo === 4) {
+            console.log(`PR Set: ${Math.round(maxRep / 2.5) * 2.5} kg * 3-5`);
+        } else {
+            console.log("Sorry, please choose number between 1 and 4 inclusive.");
+        }
+
     }
 
 </script>
