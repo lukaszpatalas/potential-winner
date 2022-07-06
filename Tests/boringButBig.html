@@ -85,6 +85,25 @@
         }
     }
 
+    function findThirdHighest(a, b, c, d, e, f, g, h, i, j) {
+        let tablica = [a, b, c, d, e, f, g, h, i, j];
+        let temporary = 0;
+        console.log(tablica);
+        for (j = 0; j < 9; j++) {
+            for (i = 0; i < tablica.length; i++) {
+                if (tablica[i] < tablica[i + 1]) {
+                    temporary = tablica[i];
+                    tablica[i] = tablica[i + 1];
+                    tablica[i + 1] = temporary;
+                }
+            }
+        }
+        console.log(tablica);
+        console.log(tablica[2]);
+    }
+
+    findThirdHighest(99, 100, 98, 97, 6, 34, 2, 75, 85, 9, 11);
+
 </script>
 
 </html>
